@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Shop</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" integrity="sha384-fZCoUih8XsaUZnNDOiLqnby1tMJ0sE7oBbNk2Xxf5x8Z4SvNQ9j83vFMa/erbVrV" crossorigin="anonymous"/>
+     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+     <link
+        rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      />
+</head>
+<body>
+
+    {{#if yAdm}}
+
+     <div class="body">       
+          <section id="menu">
+               {{>navAD}}
+                
+                <div class="body-content">
+                      {{{body}}}
+                </div>
+
+                {{>modal}}
+               
+          </section>
+          
+           {{!-- Link main.js --}}
+          <script src="admin.js"></script>
+     </div>
+
+    {{else}}
+
+    <div class="main">
+        {{>header}}
+        {{{body}}}
+        {{>footer}}
+        {{!-- {{>modal}} --}}
+        <script src="main.js"></scrip>
+    </div>
+
+    {{/if}}
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+     
+</body>
+</html>

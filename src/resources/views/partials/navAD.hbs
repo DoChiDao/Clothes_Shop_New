@@ -1,0 +1,81 @@
+ <div class="logo">
+                  <img src="img/store.png" alt="">
+                  <h2>Dynamic</h2>
+           </div>
+            
+           <div class="items">
+              <li><i class="fas fa-chart-pie"></i><a href="/admin/list-user">List User</a></li>
+              <li><i class="fab fa-uikit"></i><a href="/admin/createUI">Add User</a></li>
+              <li><i class="fas fa-th-large"></i><a href="#">Tabels</a></li>
+              <li><i class="fas fa-edit"></i><a href="#">Forms</a></li>
+              <li><i class="fab fa-cc-visa"></i><a href="#">Cards</a></li>
+              <li><i class="fas fa-hamburger"></i></i><a href="#">Modal</a></li>
+              <li><i class="fas fa-chart-line"></i><a href="#">Report List</a></li>
+           </div>
+    </section>
+
+    <section id="interface">
+             <div class="navigation">
+                  <div class="n1">
+                      <div class="search">
+                        <i class="fas fa-search"></i>
+                          <input type="text" placeholder="Search">
+                      </div>
+                  </div>
+
+                  <div class="protofile">
+                     <i class="far fa-bell"></i>
+                      <div class="menudrop">
+                        {{#if yAdm}}
+                           <img src="{{dtta.avata}}" alt=""> <span>{{dtta.firstName}}</span> 
+                        {{else}}
+                         <img src="img/user.png" alt="">
+                         {{/if}}
+                          <ul class="subnav-us">
+                                    <li><a href="#">Cài đặt tài khoản</a></li>
+                                    <li><a class="sign-in" href="#">Sign In</a></li>
+                                    <li><a class="log-out" href="#">Log Out</a></li>
+                                 </ul>
+                      </div>
+                  </div>
+             </div>
+
+             <h3 class="i-name">
+                 Dashboard
+             </h3>
+
+             <div class="values">
+                  <div class="val-box">
+                    <i class="fas fa-user"></i>
+                      <div>
+                         <h3> {{changeArr dta}}</h3>
+                         <span>List User</span>
+                      </div>
+                  </div>
+
+                  <div class="val-box">
+                    <i class="fas fa-shopping-cart"></i>
+                      <div>
+                         <h3>86</h3>
+                         <span>List Hàng Hóa Khác</span>
+                      </div>
+                  </div>
+
+                  <div class="val-box">
+                    <i class="fas fa-tshirt"></i>
+                      <div>
+                         <h3>86</h3>
+                         <span>List Áo</span>
+                      </div>
+                  </div>
+                     
+                  <div class="val-box">
+                    <i class="fas fa-shoe-prints"></i>
+                      <div>
+                         <h3>86</h3>
+                         <span>List Pants and Shoose</span>
+                      </div>
+                  </div>
+
+                   
+               </div>
